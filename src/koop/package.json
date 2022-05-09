@@ -1,0 +1,17 @@
+{
+  "name": "koop",
+  "version": "1.0.0",
+  "description": "Koop lambda",
+  "main": "koop.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "koop": "^4.2.3",
+    "serverless": "^3.16.0",
+    "serverless-http": "^3.0.1",
+    "serverless-offline": "^8.7.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

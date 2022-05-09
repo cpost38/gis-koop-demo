@@ -1,23 +1,15 @@
-import { App, Stack, StackProps } from 'aws-cdk-lib';
-import { Construct } from 'constructs';
+import { App } from 'aws-cdk-lib';
+import { KoopStack } from './koop-stack';
 
-export class MyStack extends Stack {
-  constructor(scope: Construct, id: string, props: StackProps = {}) {
-    super(scope, id, props);
-
-    // define resources here...
-  }
-}
-
-// for development, use account/region from cdk cli
-const devEnv = {
-  account: process.env.CDK_DEFAULT_ACCOUNT,
-  region: process.env.CDK_DEFAULT_REGION,
+const sandboxEnvironment = {
+  account: '122467643252',
+  region: 'eu-west-1',
 };
 
 const app = new App();
 
-new MyStack(app, 'koop-js-demo-dev', { env: devEnv });
-// new MyStack(app, 'koop-js-demo-prod', { env: prodEnv });
+new KoopStack(app, 'koop-stack', {
+  env: sandboxEnvironment,
+});
 
 app.synth();

@@ -121,6 +121,14 @@
         }
       ]
     },
+    "install:koop": {
+      "name": "install:koop",
+      "steps": [
+        {
+          "exec": "cd src/koop && yarn install"
+        }
+      ]
+    },
     "package": {
       "name": "package",
       "description": "Creates the distribution package"
@@ -137,6 +145,14 @@
     "post-upgrade": {
       "name": "post-upgrade",
       "description": "Runs after upgrading dependencies"
+    },
+    "postbuild": {
+      "name": "postbuild",
+      "steps": [
+        {
+          "exec": "npx projen install:koop"
+        }
+      ]
     },
     "pre-compile": {
       "name": "pre-compile",
