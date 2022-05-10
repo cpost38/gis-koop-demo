@@ -24,7 +24,7 @@
     enabled "2.0.x"
     kuler "^2.0.0"
 
-"@esri/proj-codes@^2.6.0":
+"@esri/proj-codes@^2.2.0", "@esri/proj-codes@^2.6.0":
   version "2.9.0"
   resolved "https://registry.yarnpkg.com/@esri/proj-codes/-/proj-codes-2.9.0.tgz#7e393bbc9a243fdeacf601733d3568368e4046a2"
   integrity sha512-7wSuiLDERoGHQeAyqdcBtntnCw/UmpAwizZRl3YXIUepoS1m56BMbCwOspKTe4RbJLGzfJJojimoVyy/z4DOfw==
@@ -338,6 +338,13 @@
   dependencies:
     "@koopjs/logger" "^2.0.6"
     featureserver "^3.4.0"
+
+"@koopjs/output-wfs@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@koopjs/output-wfs/-/output-wfs-0.0.1.tgz#2bd3bf55379770ef73acb26be8b66dcc6805a381"
+  integrity sha1-K9O/VTeXcO9zrLJr6LZtzGgFo4E=
+  dependencies:
+    winnow "^1.11.2"
 
 "@kwsites/file-exists@^1.1.1":
   version "1.1.1"
@@ -697,6 +704,18 @@ ajv@^8.0.0, ajv@^8.11.0:
     require-from-string "^2.0.2"
     uri-js "^4.2.2"
 
+alasql@^0.6.2:
+  version "0.6.7"
+  resolved "https://registry.yarnpkg.com/alasql/-/alasql-0.6.7.tgz#0f310689fcce337145c4e1ff5d7a33c201ae0707"
+  integrity sha512-q5aoLDXFS2BoGV/nd1hXG6ODOo/R7s08NQ5o86cLLTVpigk8z/7+UepvkMv8pKBLr4wgUBEgWTmhueW9ndkLcg==
+  dependencies:
+    dom-storage "^2.1.0"
+    es6-promise "^4.2.6"
+    lodash "4.17.20"
+    request "2.88.2"
+    xlsx "0.16.8"
+    yargs "16.1.0"
+
 alasql@^1.0.0:
   version "1.7.3"
   resolved "https://registry.yarnpkg.com/alasql/-/alasql-1.7.3.tgz#ef9909e345b4ac8d5f00e7e6b772c7e419b41db4"
@@ -887,6 +906,14 @@ axios@^0.21.1:
   integrity sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==
   dependencies:
     follow-redirects "^1.14.0"
+
+axios@^0.27.2:
+  version "0.27.2"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.27.2.tgz#207658cc8621606e586c85db4b41a750e756d972"
+  integrity sha512-t+yRIyySRTp/wua5xEr+z1q60QmLq8ABsS5O9Me1AsE5dfKqgnCFzwiCZZ/cGNd1lq4/7akDWMxdhVlucjmnOQ==
+  dependencies:
+    follow-redirects "^1.14.9"
+    form-data "^4.0.0"
 
 balanced-match@^1.0.0:
   version "1.0.2"
@@ -1339,7 +1366,7 @@ colorspace@1.1.x:
     color "^3.1.3"
     text-hex "1.0.x"
 
-combined-stream@^1.0.6, combined-stream@~1.0.6:
+combined-stream@^1.0.6, combined-stream@^1.0.8, combined-stream@~1.0.6:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/combined-stream/-/combined-stream-1.0.8.tgz#c3d45a8b34fd730631a110a8a2520682b31d5a7f"
   integrity sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==
@@ -2107,7 +2134,7 @@ extsprintf@^1.2.0:
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.4.1.tgz#8d172c064867f235c0c84a596806d279bf4bcc07"
   integrity sha512-Wrk35e8ydCKDj/ArClo1VrPVmN8zph5V4AtHwIuHhvMXsKf73UT3BOD+azBIW+3wOJ4FhEH7zyaJCFvChjYvMA==
 
-farmhash@^3.1.0:
+farmhash@^3.0.0, farmhash@^3.1.0:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/farmhash/-/farmhash-3.2.2.tgz#3a3ea29c433553083212f5f34883314a954d469c"
   integrity sha512-vhGKzOrdw2VgB8uqHtCQhQxgP2N0UwKCQo8m0cdD9KzyFJs8wbvFS5UzUJw1aHRCxciBgEVxF4ilF7jZ/6US3g==
@@ -2280,12 +2307,25 @@ flat@^5.0.2:
   resolved "https://registry.yarnpkg.com/flat/-/flat-5.0.2.tgz#8ca6fe332069ffa9d324c327198c598259ceb241"
   integrity sha512-b6suED+5/3rTpUBdG1gupIl8MPFCAMA0QXwmljLhvCUKcUvdE4gWky9zpuGCcXHOsz4J9wPGNWq6OKpmIzz3hQ==
 
+flora-errors@^2.0.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/flora-errors/-/flora-errors-2.1.0.tgz#be3a2e04991d9f194e86ab18984e69fcf90c5b38"
+  integrity sha512-HJuJu/ksHJHovqUuuwFuE67fgnnaAs+zx4Yx+9Feh4uj1ypLYNQT69IIXgwWuW3Lv2ghjExWxmFqC6w3ZjA1Jg==
+
+flora-sql-parser@^0.9.3:
+  version "0.9.4"
+  resolved "https://registry.yarnpkg.com/flora-sql-parser/-/flora-sql-parser-0.9.4.tgz#fc8460fa608f5bcac5ccafaa9216a399a4bd1bfd"
+  integrity sha512-rZTAUwVwPoEc400+6bfilZt2VeDQGZvaWiaQgpYP1Mo/lP8hSZaZtxcBpNnk3OJpD4G7QmLLipz3hzK0pRSx7w==
+  dependencies:
+    flora-errors "^2.0.0"
+    has "^1.0.3"
+
 fn.name@1.x.x:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/fn.name/-/fn.name-1.1.0.tgz#26cad8017967aea8731bc42961d04a3d5988accc"
   integrity sha512-GRnmB5gPyJpAhTQdSZTSp9uaPSvl09KoYcMQtsB9rQoOmzs9dH6ffeccH+Z+cv6P68Hu5bC6JjRh4Ah/mHSNRw==
 
-follow-redirects@^1.14.0:
+follow-redirects@^1.14.0, follow-redirects@^1.14.9:
   version "1.15.0"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.0.tgz#06441868281c86d0dda4ad8bdaead2d02dca89d4"
   integrity sha512-aExlJShTV4qOUOL7yF1U5tvLCB0xQuudbf6toyYA0E/acBNw71mvjFTnLaRp50aQaYocMR0a/RMMBIHeZnGyjQ==
@@ -2302,6 +2342,15 @@ form-data@^2.3.1:
   dependencies:
     asynckit "^0.4.0"
     combined-stream "^1.0.6"
+    mime-types "^2.1.12"
+
+form-data@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/form-data/-/form-data-4.0.0.tgz#93919daeaf361ee529584b9b31664dc12c9fa452"
+  integrity sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==
+  dependencies:
+    asynckit "^0.4.0"
+    combined-stream "^1.0.8"
     mime-types "^2.1.12"
 
 form-data@~2.3.2:
@@ -2637,6 +2686,11 @@ highland@^2.7.4:
   integrity sha512-dn2flPapIIAa4BtkB2ahjshg8iSJtrJtdhEb9/oiOrS5HMQTR/GuhFpqJ+11YBdtnl3AwWKvbZd1Uxr8uAmA7A==
   dependencies:
     util-deprecate "^1.0.2"
+
+highland@^3.0.0-beta.3:
+  version "3.0.0-beta.10"
+  resolved "https://registry.yarnpkg.com/highland/-/highland-3.0.0-beta.10.tgz#e07869611de2109134c523e2479ef5af5334c112"
+  integrity sha512-fBxAarP4g0AFWRKd+SJBWsKmkyw1WZdQZ1jjFSAVrxLXIhEo5NnEBy+rDEM695Z/i4/tP2lMYW6iuotStDFHYw==
 
 http-cache-semantics@^4.0.0:
   version "4.1.0"
@@ -3357,6 +3411,11 @@ lodash.union@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.union/-/lodash.union-4.6.0.tgz#48bb5088409f16f1821666641c44dd1aaae3cd88"
   integrity sha1-SLtQiECfFvGCFmZkHETdGqrjzYg=
+
+lodash@4.17.20:
+  version "4.17.20"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
+  integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
 
 lodash@4.17.21, lodash@^4.17.11, lodash@^4.17.15, lodash@^4.17.21, lodash@^4.17.4:
   version "4.17.21"
@@ -5430,6 +5489,29 @@ widest-line@^3.1.0:
   dependencies:
     string-width "^4.0.0"
 
+winnow@^1.11.2:
+  version "1.16.13"
+  resolved "https://registry.yarnpkg.com/winnow/-/winnow-1.16.13.tgz#0b30a9c6599c271ebf75d64a04d6aa9c621b63b2"
+  integrity sha512-RaDjY5ZVk4IqjrGaagi+4jwTV+OnWkTqdFdh0ht0MxVLgDXt17SLNVbsOxTNrx5N01WFFTcbIxBHNMsjb+19wQ==
+  dependencies:
+    "@esri/proj-codes" "^2.2.0"
+    "@terraformer/spatial" "^2.0.7"
+    "@turf/bbox-polygon" "^6.0.1"
+    "@turf/centroid" "^6.0.0"
+    alasql "^0.6.2"
+    classybrew "0.0.3"
+    flora-sql-parser "^0.9.3"
+    highland "^3.0.0-beta.3"
+    lodash "^4.17.4"
+    moment "^2.18.1"
+    ngeohash "^0.6.3"
+    proj4 "^2.6.2"
+    simple-statistics "^7.0.0"
+    string-hash "^1.1.3"
+    wkt-parser "^1.2.2"
+  optionalDependencies:
+    farmhash "^3.0.0"
+
 winnow@^2.2.2:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/winnow/-/winnow-2.5.0.tgz#be467221df93006a459dde0332d5f232340d9455"
@@ -5537,6 +5619,21 @@ xdg-basedir@^4.0.0:
   resolved "https://registry.yarnpkg.com/xdg-basedir/-/xdg-basedir-4.0.0.tgz#4bc8d9984403696225ef83a1573cbbcb4e79db13"
   integrity sha512-PSNhEJDejZYV7h50BohL09Er9VaIefr2LMAf3OEmpCkjOi34eYyQYAXUTjEQtZJTKcF0E2UKTh+osDLsgNim9Q==
 
+xlsx@0.16.8:
+  version "0.16.8"
+  resolved "https://registry.yarnpkg.com/xlsx/-/xlsx-0.16.8.tgz#5546de9b0ba15169b36770d4e43b24790d3ff1b8"
+  integrity sha512-qWub4YCn0xLEGHI7WWhk6IJ73MDu7sPSJQImxN6/LiI8wsHi0hUhICEDbyqBT+jgFgORZxrii0HvhNSwBNAPoQ==
+  dependencies:
+    adler-32 "~1.2.0"
+    cfb "^1.1.4"
+    codepage "~1.14.0"
+    commander "~2.17.1"
+    crc-32 "~1.2.0"
+    exit-on-epipe "~1.0.1"
+    ssf "~0.11.2"
+    wmf "~1.0.1"
+    word "~0.3.0"
+
 xlsx@0.17.0:
   version "0.17.0"
   resolved "https://registry.yarnpkg.com/xlsx/-/xlsx-0.17.0.tgz#028176a0140967dcee1817d221678461e47481c8"
@@ -5571,7 +5668,7 @@ xtend@^4.0.0:
   resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.2.tgz#bb72779f5fa465186b1f438f674fa347fdb5db54"
   integrity sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==
 
-y18n@^5.0.5:
+y18n@^5.0.2, y18n@^5.0.5:
   version "5.0.8"
   resolved "https://registry.yarnpkg.com/y18n/-/y18n-5.0.8.tgz#7f4934d0f7ca8c56f95314939ddcd2dd91ce1d55"
   integrity sha512-0pfFzegeDWJHJIAmTLRP2DwHjdF5s7jo9tuztdQxAhINCdvS+3nGINqPd00AphqJR/0LhANUS6/+7SCb98YOfA==
@@ -5598,6 +5695,19 @@ yargs-parser@^20.2.2:
   version "20.2.9"
   resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-20.2.9.tgz#2eb7dc3b0289718fc295f362753845c41a0c94ee"
   integrity sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w==
+
+yargs@16.1.0:
+  version "16.1.0"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-16.1.0.tgz#fc333fe4791660eace5a894b39d42f851cd48f2a"
+  integrity sha512-upWFJOmDdHN0syLuESuvXDmrRcWd1QafJolHskzaw79uZa7/x53gxQKiR07W59GWY1tFhhU/Th9DrtSfpS782g==
+  dependencies:
+    cliui "^7.0.2"
+    escalade "^3.1.1"
+    get-caller-file "^2.0.5"
+    require-directory "^2.1.1"
+    string-width "^4.2.0"
+    y18n "^5.0.2"
+    yargs-parser "^20.2.2"
 
 yargs@16.2.0:
   version "16.2.0"

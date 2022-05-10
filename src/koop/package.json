@@ -4,13 +4,16 @@
   "description": "Koop lambda",
   "main": "koop.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./index.js",
+    "start:dev": "npx koop serve --watch"
   },
   "dependencies": {
     "koop": "^4.2.3",
     "serverless": "^3.16.0",
     "serverless-http": "^3.0.1",
-    "serverless-offline": "^8.7.0"
+    "serverless-offline": "^8.7.0",
+    "axios": "^0.27.2",
+    "@koopjs/output-wfs": "^0.0.1"
   },
   "author": "",
   "license": "ISC"

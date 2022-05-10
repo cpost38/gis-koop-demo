@@ -50,6 +50,7 @@
     "aws-cdk-lib": "^2.1.0",
     "constructs": "^10.0.5",
     "koop": "^4.2.3",
+    "request": "^2.88.2",
     "serverless": "^3.16.0",
     "serverless-http": "^3.0.1",
     "serverless-offline": "^8.7.0"

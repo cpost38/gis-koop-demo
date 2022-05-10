@@ -97,6 +97,10 @@
       "type": "runtime"
     },
     {
+      "name": "request",
+      "type": "runtime"
+    },
+    {
       "name": "serverless",
       "type": "runtime"
     },

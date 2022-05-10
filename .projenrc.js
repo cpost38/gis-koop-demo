@@ -8,6 +8,7 @@ const project = new awscdk.AwsCdkTypeScriptApp({
     'serverless',
     'serverless-http',
     'serverless-offline',
+    'request',
   ],
   scripts: {
     'install:koop': 'cd src/koop && yarn install',
