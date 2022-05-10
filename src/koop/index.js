@@ -15,8 +15,8 @@ koop.register(provider);
 
 
 // For running Koop in a lambda
-module.exports.handler = serverless(koop.server);
+// module.exports.handler = serverless(koop.server);
 
 // For running Koop locally
-// koop.server.listen(8080, () => console.log(`Koop listening on port 8080!`))
+koop.server.listen(8080, () => console.log(`Koop listening on port 8080!`))
 
