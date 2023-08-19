@@ -1,18 +1,17 @@
-# Koop.js voor API vertaling
+# Koop.js Lambda POC
 
-## GeoService standaard
-
+## GeoService standard
 
 - Feature service:
-    - https://<catalog-url>/<serviceName>/FeatureServer
-    - Layers
 
+  - https:<catalog-url>/<serviceName>/FeatureServer
 
-- :id - specify a 
-- :layer - parameter to specify a layer 
+- Layers
+  - :id - specify a
+  - :layer - parameter to specify a layer
 
 ```
-"Geoservices" output routes for the "parkeer-provider" provider         Methods  
+"Geoservices" output routes for the "parkeer-provider" provider         Methods
 ----------------------------------------------------------------------  ---------
 /parkeer-provider/rest/info                                             GET, POST (GeoService info)
 /parkeer-provider/tokens/:method                                        GET, POST (auth)
